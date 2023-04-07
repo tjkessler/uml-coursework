@@ -1,0 +1,5 @@
+<launch>
+    <arg name="index" default="0" doc="Index of image to publish"/>
+    <node name="homework8_filter" pkg="homework8" type="homework8_filter.py"/>
+    <node name="homework8_pub" pkg="homework8" type="homework8_pub.py" args="$(find image_processing_hw)/sample_images/image$(arg index).png" />
+</launch>

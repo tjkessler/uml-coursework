@@ -1,0 +1,18 @@
+<launch>
+
+<include file="$(find homework1)/launch/homework1.launch"/>
+
+<param name="conversion" type="string" value="smoots"/>
+
+  <group ns="homework2">
+    <node pkg="homework2" name="publisher" type="publisher.py"/>
+    <node pkg="homework2" name="subscriber" type="subscriber.py">
+      <remap from="/homework1/total" to="/homework3/converted_val"/>
+    </node>
+  </group>
+
+  <group ns="homework3">
+    <node pkg="homework3" name="converter" type="converter.py"/>
+  </group>
+  
+</launch>

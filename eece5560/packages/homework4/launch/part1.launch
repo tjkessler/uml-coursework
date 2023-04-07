@@ -1,0 +1,15 @@
+<launch>
+
+  <include file="$(find homework1)/launch/homework1.launch"/>
+
+  <param name="conversion" type="string" value="smoots"/>
+
+  <group ns="homework2">
+    <node pkg="homework2" name="publisher" type="publisher.py"/>
+  </group>
+
+  <group ns="homework4">
+    <node pkg="homework4" name="homework4_node" type="homework4_node.py"/>
+  </group>
+  
+</launch>

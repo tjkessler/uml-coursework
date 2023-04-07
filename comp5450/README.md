@@ -1,0 +1,1 @@
+[Course description](https://www.uml.edu/catalog/courses/COMP/5450?courselist=%2Fcatalog%2Fadvance-search.aspx%3Fdepartment%3DLCOMPSCI%26type%3Ddepartment)

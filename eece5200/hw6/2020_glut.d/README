@@ -1,0 +1,10 @@
+install 
+	freeglut 
+	opengl
+and associated development libs
+
+2d sine 
+
+3d sine
+	m rotate+
+	p rotate-

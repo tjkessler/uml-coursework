@@ -1,0 +1,8 @@
+#!/bin/csh
+c++ -DMAC -w \
+-I./FILTER.d \
+-I/usr/local/opt/openal-soft/include \
+-L/usr/local/opt/openal-soft/lib \
+ ./MAIN.cpp ./Openwavefile.cpp ./prebuffer.cpp ./IdleFiltering.cpp \
+./FILTER.D/sfastfilt.cpp ./FILTER.D/sfft.cpp ./FILTER.D/sfht.cpp \
+-lncurses -framework OpenAL -framework OpenGL -framework GLUT

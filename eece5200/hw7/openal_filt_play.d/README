@@ -1,0 +1,14 @@
+
+E compile script using openal and ncurses libs
+EMAC assumes openal-soft loaded  (homebrew)
+
+
+FILTER.D dir include dft and sfastfilt(routine based on overlap-save)
+IdleFiltering.cpp managed to buffer and ex filtering
+MAIN.cpp
+Openwavefile.c open wave file and obtain header info
+Prebuffer.cpp buffers and filters prior to execution of the event loop
+README
+buffer.h Defines buffer dimension and number of buffer to be usedto be used
+music.wav 
+wave.h	wave file data struct

@@ -1,0 +1,126 @@
+\documentclass{report}
+\usepackage{listings}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\hypersetup{colorlinks=true}
+\usepackage[document]{}
+\title{EECE.5200 - Homework 4}
+\author{Travis Kessler}
+\date{16 March 2021}
+\begin{document}
+	\maketitle
+	\newpage
+
+	% \lstset{language=shell}
+	\lstset{frame=lines}
+
+	\section*{Accessing Source Code}
+	
+	Source code is available at: \href{https://github.com/tjkessler/eece5200/tree/main/hw4}{https://github.com/tjkessler/eece5200/tree/main/hw4}
+	
+	\textit{}
+	
+	\noindent To run the code, first run \textbf{\textit{make}} in the \textit{hw4} directory. This will produce 2 files: \textit{q1.o} and \textit{q2.o} corresponding to question 1 and question 2 respectively. Running each will produce \textbf{1.} output statements for $\frac{du}{dx}$ at each point $x_i$ and the evaluation of $u(x_i + \frac{dx}{2})$ where $dx = \frac{2 \pi)}{N}$ for $N = 16$, and \textbf{2.} output statements for each $x_i$ and $w(n)$ given a highest frequency index of $14 \rightarrow N = 30$. 
+
+	\section*{Question 1}
+	
+	The following output is the result of running \textit{q1.o}:
+	
+	\begin{lstlisting}
+(base) tjkessler@Traviss-MacBook-Air hw4 % ./q1.o 
+du/dx for x_i, i = (0, N)
+N =           16
+0   0.00000000    
+1   9.09494702E-13
+2  -2.27373675E-12
+3  -9.53674316E-06
+4  -2.84217094E-13
+5  -9.09494702E-12
+6   2.04636308E-12
+7  -5.91171556E-12
+8   1.45519152E-11
+9   4.32009983E-11
+10   4.54747351E-12
+11  -3.09228199E-11
+12  -1.36878953E-10
+13   1.54495239E-04
+14   5.72981662E-11
+15   4.77484718E-12
+
+u(x + dx/2) where dx/2 = 2 * pi / N
+N =           16
+0  0.382683426    
+1 -0.707106769    
+2 -0.923879504    
+3   1.19248806E-08
+4  0.923879683    
+5  0.707106769    
+6 -0.382683009    
+7  -1.00000000    
+8 -0.382683843    
+9  0.707106829    
+10  0.923879325    
+11  -1.94312338E-06
+12 -0.923879743    
+13 -0.707106054    
+14  0.382683933    
+15   1.00000000 
+	\end{lstlisting}
+
+\newpage
+
+	\section*{Question 2}
+	
+	The following output is the result of running \textit{q2.o}:
+	
+	\begin{lstlisting}
+(base) tjkessler@Traviss-MacBook-Air hw4 % ./q2.o 
+x                 w(n)
+0.00000000       224.998138    
+0.209439516       1.14440918E-05
+0.418879032       1.43051147E-05
+0.628318548       2.38418579E-05
+0.837758064      -2.86102295E-06
+1.04719758       4.48226929E-05
+1.25663710      -3.57627869E-05
+1.46607661      -1.27553940E-05
+1.67551613      -8.18967819E-05
+1.88495564      -1.81198120E-05
+2.09439516      -1.43051147E-06
+2.30383468      -1.81198120E-05
+2.51327419      -5.24520874E-06
+2.72271371      -8.24928284E-05
+2.93215322      -6.67572021E-06
+3.14159274       0.00000000    
+3.35103226       1.04904175E-05
+3.56047177      -2.47955322E-05
+3.76991129      -1.38282776E-05
+3.97935081      -2.00271606E-05
+4.18879032      -3.33786011E-06
+4.39822960       1.19209290E-06
+4.60766935       4.38094139E-06
+4.81710911      -2.47955322E-05
+5.02654839       4.00543213E-05
+5.23598766       1.18017197E-05
+5.44542742      -1.07288361E-06
+5.65486717      -2.22921371E-05
+5.86430645      -2.62260437E-06
+6.07374573       5.18560410E-06
+	\end{lstlisting}
+
+\noindent When looking for $w(n) = \frac{1}{2}$, it is apparent that $0.00 < x < 0.2094$.
+	
+\newpage
+
+	\begin{thebibliography}{99\kern\bibindent}
+	
+	\bibitem{hwref}
+	Thompson, C.
+	\textit{University of Massachusetts Lowell Department of Electrical and Computer Engineering 16.520 Computer Aided Engineering Analysis Problem Set 4}.
+	Retrieved March 16, 2021, from http://morse.uml.edu/Activities.d/16.520/S2021.d/HW4.pdf
+	
+	\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,6 @@
+<launch>
+
+  <include file="$(find homework8)/launch/launch_test.launch"/>
+  <node pkg="homework9" name="homework9_filter" type="homework9_filter.py"/>
+  
+</launch>

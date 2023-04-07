@@ -1,0 +1,1 @@
+[Course description](https://www.uml.edu/catalog/courses/EECE/5811?courselist=%2Fcatalog%2Fadvance-search.aspx%3Fdepartment%3DLEECSENGR%26type%3Ddepartment)

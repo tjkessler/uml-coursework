@@ -1,0 +1,246 @@
+root@tjkessler-ubuntu:/code/catkin_ws/src/eece5560# rostopic echo /rosout_agg
+header: 
+  seq: 69
+  stamp: 
+    secs: 1602196066
+    nsecs: 402104616
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "----- REQUESTING FROM SERVICE -----"
+file: "homework4_part2.py"
+function: "<module>"
+line: 88
+topics: 
+  - /rosout
+---
+header: 
+  seq: 70
+  stamp: 
+    secs: 1602196066
+    nsecs: 905325651
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Starting Fibonacci at 22:27:46"
+file: "homework4_part2.py"
+function: "run_service"
+line: 55
+topics: 
+  - /rosout
+---
+header: 
+  seq: 71
+  stamp: 
+    secs: 1602196069
+    nsecs: 911879539
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Fibonacci ended at 22:27:49"
+file: "homework4_part2.py"
+function: "run_service"
+line: 60
+topics: 
+  - /rosout
+---
+header: 
+  seq: 72
+  stamp: 
+    secs: 1602196069
+    nsecs: 912796735
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Delta T: 3.0066826343536377"
+file: "homework4_part2.py"
+function: "run_service"
+line: 63
+topics: 
+  - /rosout
+---
+header: 
+  seq: 73
+  stamp: 
+    secs: 1602196069
+    nsecs: 913885354
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Returned value: sequence: [0, 1, 1]"
+file: "homework4_part2.py"
+function: "run_service"
+line: 64
+topics: 
+  - /rosout
+---
+header: 
+  seq: 74
+  stamp: 
+    secs: 1602196070
+    nsecs: 416024923
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "-- REQUESTING FROM ACTION SERVER --"
+file: "homework4_part2.py"
+function: "<module>"
+line: 92
+topics: 
+  - /rosout
+---
+header: 
+  seq: 75
+  stamp: 
+    secs: 1602196070
+    nsecs: 918879508
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Starting Fibonacci at 22:27:50"
+file: "homework4_part2.py"
+function: "run_actionserver"
+line: 70
+topics: 
+  - /rosout
+---
+header: 
+  seq: 76
+  stamp: 
+    secs: 1602196070
+    nsecs: 994635105
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Sending goal..."
+file: "homework4_part2.py"
+function: "calc_fib_sequence_actionserver"
+line: 42
+topics: 
+  - /fibonacci/result
+  - /rosout
+  - /fibonacci/goal
+  - /fibonacci/status
+  - /fibonacci/cancel
+  - /fibonacci/feedback
+---
+header: 
+  seq: 77
+  stamp: 
+    secs: 1602196070
+    nsecs: 997782468
+  frame_id: ''
+level: 2
+name: "/fibonacci"
+msg: "/fibonacci: Executing, creating fibonacci sequence of order 2 with seeds 0, 1"
+file: "example_action_server_node.py"
+function: "FibonacciAction.execute_cb"
+line: 31
+topics: 
+  - /rosout
+  - /fibonacci/cancel
+  - /fibonacci/result
+  - /fibonacci/status
+  - /fibonacci/goal
+  - /fibonacci/feedback
+---
+header: 
+  seq: 78
+  stamp: 
+    secs: 1602196072
+    nsecs:   8131504
+  frame_id: ''
+level: 2
+name: "/fibonacci"
+msg: "/fibonacci: Succeeded"
+file: "example_action_server_node.py"
+function: "FibonacciAction.execute_cb"
+line: 49
+topics: 
+  - /rosout
+  - /fibonacci/cancel
+  - /fibonacci/result
+  - /fibonacci/status
+  - /fibonacci/goal
+  - /fibonacci/feedback
+---
+header: 
+  seq: 79
+  stamp: 
+    secs: 1602196072
+    nsecs:  10995864
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Goal received. Delta T: 1.0162138938903809"
+file: "homework4_part2.py"
+function: "calc_fib_sequence_actionserver"
+line: 47
+topics: 
+  - /fibonacci/result
+  - /rosout
+  - /fibonacci/goal
+  - /fibonacci/status
+  - /fibonacci/cancel
+  - /fibonacci/feedback
+---
+header: 
+  seq: 80
+  stamp: 
+    secs: 1602196072
+    nsecs:  12083292
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Fibonacci ended at 22:27:52"
+file: "homework4_part2.py"
+function: "run_actionserver"
+line: 75
+topics: 
+  - /fibonacci/result
+  - /rosout
+  - /fibonacci/goal
+  - /fibonacci/status
+  - /fibonacci/cancel
+  - /fibonacci/feedback
+---
+header: 
+  seq: 81
+  stamp: 
+    secs: 1602196072
+    nsecs:  12953758
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Delta T: 1.0936999320983887"
+file: "homework4_part2.py"
+function: "run_actionserver"
+line: 78
+topics: 
+  - /fibonacci/result
+  - /rosout
+  - /fibonacci/goal
+  - /fibonacci/status
+  - /fibonacci/cancel
+  - /fibonacci/feedback
+---
+header: 
+  seq: 82
+  stamp: 
+    secs: 1602196072
+    nsecs:  14644384
+  frame_id: ''
+level: 2
+name: "/homework4_part2"
+msg: "Returned value: sequence: [0, 1, 1]"
+file: "homework4_part2.py"
+function: "run_actionserver"
+line: 79
+topics: 
+  - /fibonacci/result
+  - /rosout
+  - /fibonacci/goal
+  - /fibonacci/status
+  - /fibonacci/cancel
+  - /fibonacci/feedback
+---

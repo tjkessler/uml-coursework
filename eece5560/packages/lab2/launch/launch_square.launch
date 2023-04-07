@@ -1,0 +1,9 @@
+<launch>
+
+    <group ns="$(env VEHICLE_NAME)">
+        <node pkg="lab2" name="lab2_square" type="square.py">
+            <remap from="/$(env VEHICLE_NAME)/vehicle_command" to="/$(env VEHICLE_NAME)/car_cmd_switch_node/cmd"/>
+        </node>
+    </group>
+
+</launch>

@@ -1,0 +1,10 @@
+<launch>
+
+<include file="$(find homework1)/launch/homework1.launch"/>
+
+  <group ns="homework2">
+    <node pkg="homework2" name="publisher" type="publisher.py"/>
+    <node pkg="homework2" name="subscriber" type="subscriber.py"/>
+  </group>
+  
+</launch>
